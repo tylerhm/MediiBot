@@ -4,13 +4,22 @@ const fs = require("fs");
 // import current emoteData
 let emoteData = require("./emote_usage.json");
 
+// create backup emoteData file, in case of corruption
+// save JSON with new data
+fs.writeFile("emote_usage.json.bak", JSON.stringify(emoteData), err => {
+  // check for errors
+  if (err) throw err;
+
+  console.log("Created backup at ./emote_usage.json.bak");
+});
+
 // important connectionInfo
 const connectionInfo = {
   identity: {
-    username: process.env.BOT_USERNAME,
-    password: process.env.OAUTH_TOKEN
+    username: "robomedii",
+    password: "oauth:v0ooxwylnwqas8m5zlowspebeva2ha"
   },
-  channels: [process.env.CHANNEL_NAME]
+  channels: ["mrmedii"]
 };
 
 // open a client with connectionInfo
@@ -30,8 +39,8 @@ function onConnectedHandler(addr, port) {
 
 // Called every time a message comes in
 function onMessageHandler(target, context, msg, self) {
-  // ignore messages from the bot
-  if (self) return;
+  // ignore messages from other bots
+  if (self || context["display-name"] === "Streamlabs") return;
 
   // check and handle emotes
   handleEmotes(msg);
@@ -44,16 +53,32 @@ function onMessageHandler(target, context, msg, self) {
 
   // switch to find command
   switch (commandName) {
+    case "!right":
+      console.log("turning right!!!");
+      break;
     case "!hi":
       client.say(target, "yo Kapp");
       break;
-    case "!emotestats":
-      respondEmoteStats(target);
+    case "!ping":
+      client.say(target, "pong!");
+      break;
+    case "!emotedata":
+      if (isMedii(context))
+        respondEmoteStats(target);
+      break;
+    case "!resetemotedata":
+      if (isMedii(context))
+        resetEmoteData(target);
       break;
     default:
       console.log(`~~ Unknown command used ${commandName}`);
       break;
   }
+}
+
+// returns true, if we are Medii
+function isMedii(context) {
+  return (context["display-name"] === "MrMedii")
 }
 
 // count and register emote usage
@@ -72,8 +97,6 @@ function handleEmotes(msg) {
   fs.writeFile("emote_usage.json", JSON.stringify(emoteData), err => {
     // check for errors
     if (err) throw err;
-
-    console.log("Saved Emote Stats");
   });
 }
 
@@ -91,14 +114,22 @@ function checkEmote(str) {
 }
 
 function respondEmoteStats(target) {
-  // check all emotes
-  for (var iTier = 0; iTier < emoteData.numTiers; iTier++) {
+  // check all t1 emotes
+  for (var iEmote = 0; iEmote < emoteData.tiers[0].num; iEmote++)
+    client.say(
+      target,
+      emoteData.tiers[0].emotes[iEmote].name +
+        " : " +
+        emoteData.tiers[0].emotes[iEmote].uses
+    );
+}
+
+function resetEmoteData(target) {
+  // reset ALL emotes
+  for (var iTier = 0; iTier < emoteData.numTiers; iTier++)
     for (var iEmote = 0; iEmote < emoteData.tiers[iTier].num; iEmote++)
-      client.say(
-        target,
-        emoteData.tiers[iTier].emotes[iEmote].name +
-          " : " +
-          emoteData.tiers[iTier].emotes[iEmote].uses
-      );
-  }
+      emoteData.tiers[iTier].emotes[iEmote].uses = 0;
+
+  console.log("Emote data has been reset.");
+  client.say(target, "Emote data has been reset.");
 }
