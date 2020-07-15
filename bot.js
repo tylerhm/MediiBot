@@ -14,13 +14,7 @@ fs.writeFile("emote_usage.json.bak", JSON.stringify(emoteData), err => {
 });
 
 // important connectionInfo
-const connectionInfo = {
-  identity: {
-    username: "robomedii",
-    password: "oauth:v0ooxwylnwqas8m5zlowspebeva2ha"
-  },
-  channels: ["mrmedii"]
-};
+const connectionInfo = require("../OAUTH/connectionInfo.json");
 
 // open a client with connectionInfo
 const client = new tmi.client(connectionInfo);
