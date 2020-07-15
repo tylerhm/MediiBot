@@ -10,7 +10,7 @@ fs.writeFile("emote_usage.json.bak", JSON.stringify(emoteData), err => {
   // check for errors
   if (err) throw err;
 
-  console.log("Created backup at ./emote_usage.json.bak");
+  console.log("~ Created minified emote backup at ./emote_usage.json.bak");
 });
 
 // important connectionInfo
@@ -28,25 +28,27 @@ client.connect();
 
 // called on connection to twitch chat
 function onConnectedHandler(addr, port) {
-  console.log(`~~ MediiBot has successfully connected to ${addr}:${port}`);
+  console.log(`~ MediiBot has successfully connected to ${addr}:${port}`);
 }
 
 // Called every time a message comes in
 function onMessageHandler(target, context, msg, self) {
   // ignore messages from other bots
   if (self || context["display-name"] === "Streamlabs") return;
-
-  // check and handle emotes
-  handleEmotes(msg);
-
-  // if it's not a command, don't check anything
-  if (msg[0] != "!") return;
+  
+  // if it's not a command, check emotes and don't check command
+  if (msg[0] != "!") {
+    handleEmotes(msg, context);
+    return;
+  }
 
   // remove whitespace from message, and then force lowercase
   const commandName = msg.trim().toLowerCase();
 
   // switch to find command
   switch (commandName) {
+
+    // basic chat commands
     case "!right":
       console.log("turning right!!!");
       break;
@@ -56,6 +58,8 @@ function onMessageHandler(target, context, msg, self) {
     case "!ping":
       client.say(target, "pong!");
       break;
+
+    // more in depth emote data commands (verifying ownership first)
     case "!emotedata":
       if (isMedii(context))
         respondEmoteStats(target);
@@ -63,9 +67,13 @@ function onMessageHandler(target, context, msg, self) {
     case "!resetemotedata":
       if (isMedii(context))
         resetEmoteData(target);
+      else
+        console.log("~ " + context["display-name"] + " attempted to reset emote data.");
       break;
+
+    // if an !command is run without 
     default:
-      console.log(`~~ Unknown command used ${commandName}`);
+      console.log(`~ Unknown command used ${commandName}`);
       break;
   }
 }
@@ -76,37 +84,38 @@ function isMedii(context) {
 }
 
 // count and register emote usage
-function handleEmotes(msg) {
+function handleEmotes(msg, context) {
   // split string into tokenized array
   const tokenizedMsg = msg.split(" ");
 
   // process each word
+  let emotesFound = 0;
   for (var wordIndex = 0; wordIndex < tokenizedMsg.length; wordIndex++) {
-    let word = tokenizedMsg[wordIndex];
-
-    checkEmote(word);
+    emotesFound += checkEmote(tokenizedMsg[wordIndex], context);
   }
 
-  // save JSON with new data
-  fs.writeFile("emote_usage.json", JSON.stringify(emoteData), err => {
-    // check for errors
-    if (err) throw err;
-  });
+  if (emotesFound > 0)
+    saveEmoteData();
 }
 
 // check if a word is an emote, and if so increment JSON
-function checkEmote(str) {
+function checkEmote(str, context) {
   // check all emotes
   for (var iTier = 0; iTier < emoteData.numTiers; iTier++) {
     for (var iEmote = 0; iEmote < emoteData.tiers[iTier].num; iEmote++) {
+      // found emote match
       if (str == emoteData.tiers[iTier].emotes[iEmote].name) {
+        // increment data and log the used emote
         emoteData.tiers[iTier].emotes[iEmote].uses++;
-        return;
+        console.log("~ " + context["display-name"] + " has used " + emoteData.tiers[iTier].emotes[iEmote].name.substring(7)); // substring to remove emote prefix
+        return 1;
       }
     }
   }
+  return 0;
 }
 
+// prints usage data for all t1 emotes
 function respondEmoteStats(target) {
   // check all t1 emotes
   for (var iEmote = 0; iEmote < emoteData.tiers[0].num; iEmote++)
@@ -118,12 +127,27 @@ function respondEmoteStats(target) {
     );
 }
 
+// saves our emote data to a JSON
+function saveEmoteData() {
+  // save JSON with new data
+  fs.writeFile("emote_usage.json", JSON.stringify(emoteData, null, 2), err => {
+    // check for errors
+    if (err) {
+      console.log(`FATAL: There was an error saving emote_usage.json...`);
+      throw err;
+    }
+  });
+}
+
+// resets all emotes to 0
 function resetEmoteData(target) {
   // reset ALL emotes
   for (var iTier = 0; iTier < emoteData.numTiers; iTier++)
     for (var iEmote = 0; iEmote < emoteData.tiers[iTier].num; iEmote++)
       emoteData.tiers[iTier].emotes[iEmote].uses = 0;
 
-  console.log("Emote data has been reset.");
+  saveEmoteData();
+
+  console.log("~ Emote data has been reset.");
   client.say(target, "Emote data has been reset.");
 }
