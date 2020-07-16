@@ -7,23 +7,23 @@
       "emotes": [
         {
           "name": "mrmedi6Hype",
-          "uses": 0
+          "uses": 65
         },
         {
           "name": "mrmedi6ChairStream",
-          "uses": 0
+          "uses": 64
         },
         {
           "name": "mrmedi6Pog",
-          "uses": 0
+          "uses": 1
         },
         {
           "name": "mrmedi6Smirk",
-          "uses": 0
+          "uses": 13
         },
         {
           "name": "mrmedi6Sad",
-          "uses": 0
+          "uses": 34
         }
       ]
     },
@@ -53,7 +53,7 @@
       "emotes": [
         {
           "name": "mrmedi6Father",
-          "uses": 0
+          "uses": 2
         },
         {
           "name": "mrmedi6ChonkyFather",

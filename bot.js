@@ -34,7 +34,13 @@ function onConnectedHandler(addr, port) {
 // Called every time a message comes in
 function onMessageHandler(target, context, msg, self) {
   // ignore messages from other bots
-  if (self || context["display-name"] === "Streamlabs") return;
+  if (self) return;
+
+  // if its streamlabs, check for raid message
+  if (context["display-name"] === "Streamlabs") {
+    handleRaid(msg, target);
+    return;
+  }
   
   // if it's not a command, check emotes and don't check command
   if (msg[0] != "!") {
@@ -49,14 +55,8 @@ function onMessageHandler(target, context, msg, self) {
   switch (commandName) {
 
     // basic chat commands
-    case "!right":
-      console.log("turning right!!!");
-      break;
     case "!hi":
       client.say(target, "yo Kapp");
-      break;
-    case "!ping":
-      client.say(target, "pong!");
       break;
 
     // more in depth emote data commands (verifying ownership first)
@@ -150,4 +150,12 @@ function resetEmoteData(target) {
 
   console.log("~ Emote data has been reset.");
   client.say(target, "Emote data has been reset.");
+}
+
+// handle a raid message from streamlabs
+function handleRaid(msg, target) {
+  const tokenizedMsg = msg.split(" ");
+
+  if (tokenizedMsg[1] === "has" && tokenizedMsg[2] === "brought")
+    client.say(target, "!so " + tokenizedMsg[0]);
 }
