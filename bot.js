@@ -49,7 +49,8 @@ function onMessageHandler(target, context, msg, self) {
   }
 
   // remove whitespace from message, and then force lowercase
-  const commandName = msg.trim().toLowerCase();
+  const commandName = msg.trim().toLowerCase().split(" ")[0];
+  console.log(commandName);
 
   // switch to find command
   switch (commandName) {
@@ -57,6 +58,9 @@ function onMessageHandler(target, context, msg, self) {
     // basic chat commands
     case "!hi":
       client.say(target, "yo Kapp");
+      break;
+    case "!8ball":
+      eightBall(msg, target);
       break;
 
     // more in depth emote data commands (verifying ownership first)
@@ -156,6 +160,14 @@ function resetEmoteData(target) {
 function handleRaid(msg, target) {
   const tokenizedMsg = msg.split(" ");
 
-  if (tokenizedMsg[1] === "has" && tokenizedMsg[2] === "brought")
+  if (tokenizedMsg[1] === "just" && tokenizedMsg[2] === "raided")
     client.say(target, "!so " + tokenizedMsg[0]);
+}
+
+// generate a random eightball message and display it
+function eightBall(msg, target) {
+  // import possible 8ball reactions
+  const eightBallResponses = require("./eightball.json");
+  let randomMessageIndex = Math.floor(Math.random() * eightBallResponses.messages.length);
+  client.say(target, eightBallResponses.messages[randomMessageIndex].message);
 }
