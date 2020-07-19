@@ -1,64 +1,22 @@
-{
-  "messages": [
-    {
-      "message": "It is certain pepeDS"
-    },
-    {
-      "message": "It is decidedly so pepeDS"
-    },
-    {
-      "message": "Without a doubt pepeDS"
-    },
-    {
-      "message": "Yes – definitely pepeDS"
-    },
-    {
-      "message": "You may rely on it pepeDS"
-    },
-    {
-      "message": "As I see it, yes pepeDS"
-    },
-    {
-      "message": "Most likely pepeDS"
-    },
-    {
-      "message": "Outlook good pepeDS"
-    },
-    {
-      "message": "Yes pepeDS"
-    },
-    {
-      "message": "Signs point to yes pepeDS"
-    },
-    {
-      "message": "Reply hazy, try again Kapp"
-    },
-    {
-      "message": "Ask again later Kapp"
-    },
-    {
-      "message": "Better not tell you now Kapp"
-    },
-    {
-      "message": "Cannot predict now Kapp"
-    },
-    {
-      "message": "Concentrate and ask again Kapp"
-    },
-    {
-      "message": "Don't count on it ppOverHeat"
-    },
-    {
-      "message": "My reply is no ppOverHeat"
-    },
-    {
-      "message": "My sources say no ppOverHeat"
-    },
-    {
-      "message": "Outlook not so good ppOverHeat"
-    },
-    {
-      "message": "Very doubtful ppOverHeat"
-    }
-  ]
-}
+[
+  "It is certain pepeDS",
+  "It is decidedly so pepeDS",
+  "Without a doubt pepeDS",
+  "Yes – definitely pepeDS",
+  "You may rely on it pepeDS",
+  "As I see it, yes pepeDS",
+  "Most likely pepeDS",
+  "Outlook good pepeDS",
+  "Yes pepeDS",
+  "Signs point to yes pepeDS",
+  "Reply hazy, try again Kapp",
+  "Ask again later Kapp",
+  "Better not tell you now Kapp",
+  "Cannot predict now Kapp",
+  "Concentrate and ask again Kapp",
+  "Don't count on it ppOverHeat",
+  "My reply is no ppOverHeat",
+  "My sources say no ppOverHeat",
+  "Outlook not so good ppOverHeat",
+  "Very doubtful ppOverHeat"
+]

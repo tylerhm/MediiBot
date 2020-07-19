@@ -1,17 +1,8 @@
 const tmi = require("tmi.js");
 const fs = require("fs");
+const emoteHandler = require("twitch-emote-handler");
 
-// import current emoteData
-let emoteData = require("./emote_usage.json");
-
-// create backup emoteData file, in case of corruption
-// save JSON with new data
-fs.writeFile("emote_usage.json.bak", JSON.stringify(emoteData), err => {
-  // check for errors
-  if (err) throw err;
-
-  console.log("~ Created minified emote backup at ./emote_usage.json.bak");
-});
+emoteHandler.saveEmoteData(true);
 
 // important connectionInfo
 const connectionInfo = require("../OAUTH/connectionInfo.json");
@@ -44,13 +35,14 @@ function onMessageHandler(target, context, msg, self) {
   
   // if it's not a command, check emotes and don't check command
   if (msg[0] != "!") {
-    handleEmotes(msg, context);
+    emoteHandler.handleEmotes(msg, context);
     return;
   }
 
-  // remove whitespace from message, and then force lowercase
-  const commandName = msg.trim().toLowerCase().split(" ")[0];
-  console.log(commandName);
+  // remove whitespace on outside from message, and then force lowercase
+  const cleanComm = msg.trim().toLowerCase();
+  const commandName = cleanComm.split(" ")[0];
+  console.log("~ " + context["display-name"] + " used " + commandName);
 
   // switch to find command
   switch (commandName) {
@@ -60,7 +52,7 @@ function onMessageHandler(target, context, msg, self) {
       client.say(target, "yo Kapp");
       break;
     case "!8ball":
-      eightBall(msg, target);
+      eightBall(target);
       break;
 
     // more in depth emote data commands (verifying ownership first)
@@ -70,7 +62,7 @@ function onMessageHandler(target, context, msg, self) {
       break;
     case "!resetemotedata":
       if (isMedii(context))
-        resetEmoteData(target);
+        emoteHandler.resetEmoteData(target);
       else
         console.log("~ " + context["display-name"] + " attempted to reset emote data.");
       break;
@@ -87,74 +79,13 @@ function isMedii(context) {
   return (context["display-name"] === "MrMedii")
 }
 
-// count and register emote usage
-function handleEmotes(msg, context) {
-  // split string into tokenized array
-  const tokenizedMsg = msg.split(" ");
-
-  // process each word
-  let emotesFound = 0;
-  for (var wordIndex = 0; wordIndex < tokenizedMsg.length; wordIndex++) {
-    emotesFound += checkEmote(tokenizedMsg[wordIndex], context);
-  }
-
-  if (emotesFound > 0)
-    saveEmoteData();
-}
-
-// check if a word is an emote, and if so increment JSON
-function checkEmote(str, context) {
-  // check all emotes
-  for (var iTier = 0; iTier < emoteData.numTiers; iTier++) {
-    for (var iEmote = 0; iEmote < emoteData.tiers[iTier].num; iEmote++) {
-      // found emote match
-      if (str == emoteData.tiers[iTier].emotes[iEmote].name) {
-        // increment data and log the used emote
-        emoteData.tiers[iTier].emotes[iEmote].uses++;
-        console.log("~ " + context["display-name"] + " has used " + emoteData.tiers[iTier].emotes[iEmote].name.substring(7)); // substring to remove emote prefix
-        return 1;
-      }
-    }
-  }
-  return 0;
-}
-
 // prints usage data for all t1 emotes
 function respondEmoteStats(target) {
   // check all t1 emotes
-  for (var iEmote = 0; iEmote < emoteData.tiers[0].num; iEmote++)
-    client.say(
-      target,
-      emoteData.tiers[0].emotes[iEmote].name +
-        " : " +
-        emoteData.tiers[0].emotes[iEmote].uses
-    );
+  emoteData[0].emotes.forEach(emote => 
+    client.say(target, emote.name + " : " + emote.count));
 }
 
-// saves our emote data to a JSON
-function saveEmoteData() {
-  // save JSON with new data
-  fs.writeFile("emote_usage.json", JSON.stringify(emoteData, null, 2), err => {
-    // check for errors
-    if (err) {
-      console.log(`FATAL: There was an error saving emote_usage.json...`);
-      throw err;
-    }
-  });
-}
-
-// resets all emotes to 0
-function resetEmoteData(target) {
-  // reset ALL emotes
-  for (var iTier = 0; iTier < emoteData.numTiers; iTier++)
-    for (var iEmote = 0; iEmote < emoteData.tiers[iTier].num; iEmote++)
-      emoteData.tiers[iTier].emotes[iEmote].uses = 0;
-
-  saveEmoteData();
-
-  console.log("~ Emote data has been reset.");
-  client.say(target, "Emote data has been reset.");
-}
 
 // handle a raid message from streamlabs
 function handleRaid(msg, target) {
@@ -165,9 +96,9 @@ function handleRaid(msg, target) {
 }
 
 // generate a random eightball message and display it
-function eightBall(msg, target) {
+function eightBall(target) {
   // import possible 8ball reactions
   const eightBallResponses = require("./eightball.json");
-  let randomMessageIndex = Math.floor(Math.random() * eightBallResponses.messages.length);
-  client.say(target, eightBallResponses.messages[randomMessageIndex].message);
+  let randomMessageIndex = Math.floor(Math.random() * eightBallResponses.length);
+  client.say(target, eightBallResponses[randomMessageIndex]);
 }
