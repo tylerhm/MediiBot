@@ -3,28 +3,43 @@
 const fs = require('fs');
 let emoteData = require('./emote_data.json');
 
-exports.respondEmoteStats = function(client, target) {
+var client = undefined;
+
+exports.init = function(c) {
+	saveEmoteData(true);
+	client = c;
+	client.on('message', onMessageHandler);
+}
+
+function onMessageHandler(target, context, msg, self) {
+
+	if (self) return;
+
+	if (msg[0] != '!') handleEmotes(msg, context);
+}
+
+function respondEmoteStats(client, target) {
 	emoteData[0].emotes.forEach(emote =>
 		client.say(target, emote.name + ' : ' + emote.count));
 }
 
-exports.handleEmotes = function(msg, context) {
+function handleEmotes(msg, context) {
 	const tokenizedMsg = msg.split(' ');
 
 	let emotesFound = 0;
 	tokenizedMsg.forEach(tok =>
-		emotesFound += exports.checkEmote(tok, context));
+		emotesFound += checkEmote(tok, context));
 
 	if (emotesFound > 0)
-		exports.saveEmoteData();
+		saveEmoteData();
 }
 
-exports.checkEmote = function(tok, context) {
+function checkEmote(tok, context) {
   for (var iTier = 0; iTier < emoteData.length; iTier++) {
     for (var iEmote = 0; iEmote < emoteData[iTier].emotes.length; iEmote++) {
       if (tok == emoteData[iTier].emotes[iEmote].name) {
         emoteData[iTier].emotes[iEmote].count++;
-        exports.log(context['display-name'] + ' used ' + emoteData[iTier].emotes[iEmote].name);
+        log(context['display-name'] + ' used ' + emoteData[iTier].emotes[iEmote].name);
         return 1;
       }
     }
@@ -32,43 +47,43 @@ exports.checkEmote = function(tok, context) {
   return 0;
 }
 
-exports.saveEmoteData = function(bak) {
+function saveEmoteData(bak) {
 	let fileName = __dirname + '/emote_data.json';
 	if (bak)
 		fileName = './emote_data.json.bak';
 	fs.writeFile(fileName, JSON.stringify(emoteData, null, 2), err => {
 	    if (err) {
-	      exports.logFatal(`There was an error saving emote_data.json...`);
+	      logFatal(`There was an error saving emote_data.json...`);
 	      throw err;
 	    }
 	  });
 	if (bak)
-		exports.log('emote_data.json has been backed up to emote_data.json.bak in your working directory')
+		log('emote_data.json has been backed up to emote_data.json.bak in your working directory')
 	else
-		exports.log('emote_data.json has been updated')
+		log('emote_data.json has been updated')
 }
 
-exports.resetEmoteData = function() {
+function resetEmoteData() {
 	emoteData.forEach(tier =>
 		tier.emotes.forEach(emote =>
 			emote.count = 0));
 
-  exports.saveEmoteData();
+  saveEmoteData();
 
-  exports.log('Emote data has been reset');
+  log('Emote data has been reset');
 }
 
-exports.log = function(msg) {
+function log(msg) {
 	const pref = 'eh ~ ';
 	console.log(pref + msg);
 }
 
-exports.logError = function(msg) {
+function logError(msg) {
 	const pref = 'eh ~ ERROR: ';
 	console.log(pref + msg);
 }
 
-exports.logFatal = function(msg) {
+function logFatal(msg) {
 	const pref = 'eh ~ FATAL: ';
 	console.log(pref + msg);
 }
