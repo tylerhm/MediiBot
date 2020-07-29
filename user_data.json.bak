@@ -11,8 +11,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 6,
-          "last-use": 1595793825893
+          "count": 9,
+          "last-use": 1595912796972
         }
       ]
     },
@@ -21,8 +21,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 29,
-          "last-use": 1595792950058
+          "count": 37,
+          "last-use": 0
         }
       ]
     },
@@ -40,7 +40,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 22
+          "count": 35,
+          "last-use": 1595914615213
         }
       ]
     },
@@ -49,7 +50,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 11
+          "count": 22,
+          "last-use": 1595914624464
         }
       ]
     },
@@ -85,7 +87,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 4
+          "count": 12,
+          "last-use": 1595914368922
         }
       ]
     },
@@ -184,7 +187,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1
+          "count": 2,
+          "last-use": 1595912253983
         }
       ]
     },
@@ -211,7 +215,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1
+          "count": 4,
+          "last-use": 1595919098664
         }
       ]
     },
@@ -221,6 +226,116 @@
         {
           "category": "yeet",
           "count": 1
+        }
+      ]
+    },
+    {
+      "name": "@streamlabs",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 2,
+          "last-use": 1595912539255
+        }
+      ]
+    },
+    {
+      "name": "@davonte_thomas",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 2,
+          "last-use": 0
+        }
+      ]
+    },
+    {
+      "name": "@tinaplaying",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 4,
+          "last-use": 1595913231211
+        }
+      ]
+    },
+    {
+      "name": "@therealnicko",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 5,
+          "last-use": 1595913487585
+        }
+      ]
+    },
+    {
+      "name": "@colezalias",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 3,
+          "last-use": 1595912932631
+        }
+      ]
+    },
+    {
+      "name": "@cactusbeach",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 4,
+          "last-use": 1595913480934
+        }
+      ]
+    },
+    {
+      "name": "@marbleswithjosh",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 6,
+          "last-use": 1595914840858
+        }
+      ]
+    },
+    {
+      "name": "@metalmama1987",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 3,
+          "last-use": 1595917384290
+        }
+      ]
+    },
+    {
+      "name": "@elliexaloy",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1595915818660
+        }
+      ]
+    },
+    {
+      "name": "@reb00tz_",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 3,
+          "last-use": 1595918689049
+        }
+      ]
+    },
+    {
+      "name": "@coqui421",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 2,
+          "last-use": 0
         }
       ]
     }

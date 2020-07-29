@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "mrmedii-emote-handler": "^1.2.0",
-    "mrmedii-userdata-handler": "^1.2.1",
+    "mrmedii-emote-handler": "^1.2.1",
+    "mrmedii-userdata-handler": "^1.2.3",
     "tmi.js": "^1.5.0"
   },
   "engines": {

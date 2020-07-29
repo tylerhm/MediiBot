@@ -52,24 +52,6 @@ function onMessageHandler(target, context, msg, self) {
     case '!8ball':
       eightBall(target);
       break;
-
-    // more in depth emote data commands (verifying ownership first)
-    case '!emotedata':
-      if (isMedii(context))
-        emoteHandler.respondEmoteStats(client, target);
-      break;
-    case '!resetemotedata':
-      if (isMedii(context))
-        emoteHandler.resetEmoteData(target);
-      break;
-    case '!removeuser':
-      if (isMedii(context))
-        userDataHandler.removeUser(commandParam);
-      break;
-    case '!resetuserdata':
-      if (isMedii(context))
-        userDataHandler.resetUserData();
-      break;
   }
 }
 
