@@ -4,6 +4,7 @@ const tmi = require('tmi.js');
 const fs = require('fs');
 const emoteHandler = require('mrmedii-emote-handler');
 const userDataHandler = require('mrmedii-userdata-handler');
+const commHandler = require('mrmedii-general-command-handler');
 
 // important connectionInfo
 const connectionInfo = require('../OAUTH/connectionInfo.json');
@@ -13,9 +14,10 @@ const client = new tmi.client(connectionInfo);
 
 userDataHandler.init(client);
 emoteHandler.init(client);
+commHandler.init(client);
 
 // Register our event handlers (defined below)
-client.on('message', onMessageHandler);
+//client.on('message', onMessageHandler);
 client.on('connected', onConnectedHandler);
 client.on('raided', onRaidHandler);
 
@@ -42,18 +44,12 @@ function onMessageHandler(target, context, msg, self) {
   if (twoPart)
     commandParam = commSplit[1];
 
-  // switch to find command
-  switch (commandName) {
-
-    // basic chat commands
-    case '!hi':
-      client.say(target, 'yo Kapp');
-      break;
     case '!8ball':
       eightBall(target);
       break;
   }
 }
+
 
 // returns true, if we are Medii
 function isMedii(context) {
