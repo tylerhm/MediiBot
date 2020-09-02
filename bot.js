@@ -44,10 +44,11 @@ function onMessageHandler(target, context, msg, self) {
   if (twoPart)
     commandParam = commSplit[1];
 
-    case '!8ball':
-      eightBall(target);
-      break;
-  }
+    switch(commandName) {
+        case '!8ball':
+            eightBall(target);
+            break;
+    }
 }
 
 
