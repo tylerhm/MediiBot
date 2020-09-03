@@ -147,12 +147,12 @@ function decrementData(target, context, user, undo) {
 				client.say(target, 'Yikes, you were too slow! PepeHands');
 		}
 		else {
-			console.logError('User does not own decremented category');
+			logError('User does not own decremented category');
 			return false;
 		}
 	}
 	else {
-		console.logError('User does not exist, cannot decrement');
+		logError('User does not exist, cannot decrement');
 		return false;
 	}
 
@@ -250,7 +250,7 @@ function removeUser(user) {
 		userData.entries.splice(validUser, 1);
 		log(user + ' has been removed');
 	}
-	else 
+	else
 		logError(user + ' does not exist');
 
 	saveUserData();

@@ -3,6 +3,10 @@
     {
       "name": "yeet",
       "undo": "yoink"
+    },
+    {
+      "name": "smooch",
+      "undo": "unsmooch"
     }
   ],
   "entries": [
@@ -21,8 +25,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 31,
-          "last-use": 1598927292566
+          "count": 32,
+          "last-use": 1599108704365
+        },
+        {
+          "category": "smooch",
+          "count": 2,
+          "last-use": 1599108725194
         }
       ]
     },
@@ -40,7 +49,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 22
+          "count": 23,
+          "last-use": 1599112269307
+        },
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1599112676265
         }
       ]
     },
@@ -49,8 +64,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 23,
-          "last-use": 1599016387673
+          "count": 24,
+          "last-use": 1599017585536
         }
       ]
     },
@@ -60,6 +75,11 @@
         {
           "category": "yeet",
           "count": 1
+        },
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1599108953211
         }
       ]
     },
@@ -149,7 +169,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 2
+          "count": 3,
+          "last-use": 1599107982870
         }
       ]
     },
@@ -185,7 +206,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1
+          "count": 2,
+          "last-use": 1599107309173
+        },
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1599108530825
         }
       ]
     },
@@ -240,8 +267,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 4,
-          "last-use": 0
+          "count": 5,
+          "last-use": 1599109311738
         }
       ]
     },
@@ -252,6 +279,16 @@
           "category": "yeet",
           "count": 1,
           "last-use": 1598927280851
+        }
+      ]
+    },
+    {
+      "name": "@amerikia",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 0
         }
       ]
     }
