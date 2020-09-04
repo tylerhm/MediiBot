@@ -3,10 +3,6 @@
     {
       "name": "yeet",
       "undo": "yoink"
-    },
-    {
-      "name": "smooch",
-      "undo": "unsmooch"
     }
   ],
   "entries": [
@@ -25,13 +21,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 32,
-          "last-use": 1599108704365
-        },
-        {
-          "category": "smooch",
-          "count": 2,
-          "last-use": 1599108725194
+          "count": 29,
+          "last-use": 1595792950058
         }
       ]
     },
@@ -49,13 +40,7 @@
       "data": [
         {
           "category": "yeet",
-          "count": 23,
-          "last-use": 1599112269307
-        },
-        {
-          "category": "smooch",
-          "count": 1,
-          "last-use": 1599112676265
+          "count": 22
         }
       ]
     },
@@ -64,8 +49,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 24,
-          "last-use": 1599017585536
+          "count": 202,
+          "last-use": 1599196053756
         }
       ]
     },
@@ -74,12 +59,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1
-        },
-        {
-          "category": "smooch",
-          "count": 1,
-          "last-use": 1599108953211
+          "count": 2,
+          "last-use": 1599187445429
         }
       ]
     },
@@ -169,8 +150,7 @@
       "data": [
         {
           "category": "yeet",
-          "count": 3,
-          "last-use": 1599107982870
+          "count": 2
         }
       ]
     },
@@ -206,13 +186,7 @@
       "data": [
         {
           "category": "yeet",
-          "count": 2,
-          "last-use": 1599107309173
-        },
-        {
-          "category": "smooch",
-          "count": 1,
-          "last-use": 1599108530825
+          "count": 1
         }
       ]
     },
@@ -253,32 +227,22 @@
       ]
     },
     {
-      "name": "@juegosphera",
-      "data": [
-        {
-          "category": "yeet",
-          "count": 1,
-          "last-use": 1598927276647
-        }
-      ]
-    },
-    {
       "name": "@coqui421",
       "data": [
         {
           "category": "yeet",
-          "count": 5,
-          "last-use": 1599109311738
+          "count": 21,
+          "last-use": 1599196088299
         }
       ]
     },
     {
-      "name": "@coqui",
+      "name": "@reb00tz_",
       "data": [
         {
           "category": "yeet",
           "count": 1,
-          "last-use": 1598927280851
+          "last-use": 1599186641469
         }
       ]
     },
@@ -288,7 +252,7 @@
         {
           "category": "yeet",
           "count": 1,
-          "last-use": 0
+          "last-use": 1599187672853
         }
       ]
     }
