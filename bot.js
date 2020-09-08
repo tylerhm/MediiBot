@@ -5,6 +5,7 @@ const fs = require('fs');
 const emoteHandler = require('mrmedii-emote-handler');
 const userDataHandler = require('mrmedii-userdata-handler');
 const commHandler = require('mrmedii-general-command-handler');
+const prioQueueHandler = require('mrmedii-user-prioqueue-handler');
 
 // important connectionInfo
 const connectionInfo = require('../OAUTH/connectionInfo.json');
@@ -15,6 +16,7 @@ const client = new tmi.client(connectionInfo);
 userDataHandler.init(client);
 emoteHandler.init(client);
 commHandler.init(client);
+prioQueueHandler.init(client);
 
 // Register our event handlers (defined below)
 //client.on('message', onMessageHandler);
