@@ -19,7 +19,7 @@ commHandler.init(client);
 // Register our event handlers (defined below)
 //client.on('message', onMessageHandler);
 client.on('connected', onConnectedHandler);
-client.on('raided', onRaidHandler);
+//client.on('raided', onRaidHandler);
 
 // Connect to Twitch:
 client.connect();
