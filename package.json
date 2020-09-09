@@ -10,7 +10,7 @@
     "express": "^4.16.4",
     "mrmedii-emote-handler": "^1.2.3",
     "mrmedii-general-command-handler": "^1.0.7",
-    "mrmedii-user-prioqueue-handler": "^1.0.0",
+    "mrmedii-user-prioqueue-handler": "^1.0.1",
     "mrmedii-userdata-handler": "^1.2.7",
     "tmi.js": "^1.5.0"
   },

@@ -3,6 +3,10 @@
     {
       "name": "yeet",
       "undo": "yoink"
+    },
+    {
+      "name": "smooch",
+      "undo": "smack"
     }
   ],
   "entries": [
@@ -23,6 +27,11 @@
           "category": "yeet",
           "count": 32,
           "last-use": 1599457846376
+        },
+        {
+          "category": "smooch",
+          "count": 2,
+          "last-use": 1599630132143
         }
       ]
     },
@@ -231,8 +240,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 32,
-          "last-use": 1599457369488
+          "count": 34,
+          "last-use": 1599630103463
         }
       ]
     },
@@ -283,6 +292,16 @@
           "category": "yeet",
           "count": 1,
           "last-use": 1599368611575
+        }
+      ]
+    },
+    {
+      "name": "@cal",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 0,
+          "last-use": 0
         }
       ]
     }
