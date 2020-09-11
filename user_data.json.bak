@@ -68,8 +68,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 2,
-          "last-use": 1599187445429
+          "count": 3,
+          "last-use": 1599707804489
+        },
+        {
+          "category": "smooch",
+          "count": 3,
+          "last-use": 1599804210247
         }
       ]
     },
@@ -196,6 +201,11 @@
         {
           "category": "yeet",
           "count": 1
+        },
+        {
+          "category": "smooch",
+          "count": 2,
+          "last-use": 1599804210162
         }
       ]
     },
@@ -240,8 +250,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 34,
-          "last-use": 1599630103463
+          "count": 37,
+          "last-use": 1599804226406
         }
       ]
     },
@@ -302,6 +312,46 @@
           "category": "smooch",
           "count": 0,
           "last-use": 0
+        }
+      ]
+    },
+    {
+      "name": "@mex",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1599710709410
+        }
+      ]
+    },
+    {
+      "name": "@cactusbeach",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 0,
+          "last-use": 0
+        }
+      ]
+    },
+    {
+      "name": "@chat",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 3,
+          "last-use": 1599804189786
+        }
+      ]
+    },
+    {
+      "name": "@medii",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1599717774857
         }
       ]
     }
