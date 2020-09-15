@@ -58,8 +58,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 212,
-          "last-use": 1599453465685
+          "count": 213,
+          "last-use": 1599969836879
+        },
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1600062271589
         }
       ]
     },
@@ -68,13 +73,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 3,
-          "last-use": 1599707804489
+          "count": 16,
+          "last-use": 1599886583055
         },
         {
           "category": "smooch",
-          "count": 3,
-          "last-use": 1599804210247
+          "count": 6,
+          "last-use": 1600150911775
         }
       ]
     },
@@ -250,8 +255,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 37,
-          "last-use": 1599804226406
+          "count": 48,
+          "last-use": 1600062252343
         }
       ]
     },
@@ -312,6 +317,11 @@
           "category": "smooch",
           "count": 0,
           "last-use": 0
+        },
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1599881649902
         }
       ]
     },
@@ -340,8 +350,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 3,
-          "last-use": 1599804189786
+          "count": 7,
+          "last-use": 1600150046061
         }
       ]
     },
@@ -350,8 +360,38 @@
       "data": [
         {
           "category": "smooch",
+          "count": 2,
+          "last-use": 1600150049451
+        }
+      ]
+    },
+    {
+      "name": "@moarsnow",
+      "data": [
+        {
+          "category": "smooch",
           "count": 1,
-          "last-use": 1599717774857
+          "last-use": 1599881602077
+        }
+      ]
+    },
+    {
+      "name": "@securesheep",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 2,
+          "last-use": 1599978570708
+        }
+      ]
+    },
+    {
+      "name": "@griimbee",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1600060639787
         }
       ]
     }
