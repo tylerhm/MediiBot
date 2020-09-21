@@ -78,8 +78,8 @@
         },
         {
           "category": "smooch",
-          "count": 6,
-          "last-use": 1600150911775
+          "count": 8,
+          "last-use": 1600400942764
         }
       ]
     },
@@ -255,8 +255,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 48,
-          "last-use": 1600062252343
+          "count": 50,
+          "last-use": 0
         }
       ]
     },
@@ -350,8 +350,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 7,
-          "last-use": 1600150046061
+          "count": 8,
+          "last-use": 1600225541604
         }
       ]
     },
@@ -380,8 +380,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 2,
-          "last-use": 1599978570708
+          "count": 3,
+          "last-use": 1600229066172
         }
       ]
     },
@@ -392,6 +392,26 @@
           "category": "smooch",
           "count": 1,
           "last-use": 1600060639787
+        }
+      ]
+    },
+    {
+      "name": "@promatlas",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1600232674552
+        }
+      ]
+    },
+    {
+      "name": "@ddawg",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1600235864351
         }
       ]
     }
