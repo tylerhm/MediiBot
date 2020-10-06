@@ -20,8 +20,8 @@
         },
         {
           "category": "smooch",
-          "count": 12,
-          "last-use": 1601527424600
+          "count": 13,
+          "last-use": 1601531774528
         }
       ]
     },
@@ -270,8 +270,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 52,
-          "last-use": 1601436040644
+          "count": 54,
+          "last-use": 1601531228690
         }
       ]
     },
@@ -502,6 +502,16 @@
           "category": "smooch",
           "count": 1,
           "last-use": 1601527405743
+        }
+      ]
+    },
+    {
+      "name": "@arkos_kris",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1601531244562
         }
       ]
     }

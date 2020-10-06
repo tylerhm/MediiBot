@@ -4,23 +4,23 @@
     "emotes": [
       {
         "name": "mrmedi6Hype",
-        "count": 288
+        "count": 396
       },
       {
         "name": "mrmedi6ChairStream",
-        "count": 6028
+        "count": 6262
       },
       {
         "name": "mrmedi6Pog",
-        "count": 332
+        "count": 422
       },
       {
         "name": "mrmedi6Smirk",
-        "count": 127
+        "count": 137
       },
       {
         "name": "mrmedi6Sad",
-        "count": 126
+        "count": 138
       }
     ]
   },
@@ -29,7 +29,7 @@
     "emotes": [
       {
         "name": "mrmedi6Rip",
-        "count": 0
+        "count": 2
       }
     ]
   },
@@ -38,7 +38,7 @@
     "emotes": [
       {
         "name": "mrmedi6Angry",
-        "count": 0
+        "count": 3
       }
     ]
   },
@@ -47,15 +47,15 @@
     "emotes": [
       {
         "name": "mrmedi6Father",
-        "count": 2
+        "count": 6
       },
       {
         "name": "mrmedi6ChonkyFather",
-        "count": 0
+        "count": 3
       },
       {
         "name": "mrmedi6LoveGrub",
-        "count": 0
+        "count": 3
       },
       {
         "name": "mrmedi6Powa",
