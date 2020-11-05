@@ -15,8 +15,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 6,
-          "last-use": 1595793825893
+          "count": 7,
+          "last-use": 1604295563444
         },
         {
           "category": "smooch",
@@ -30,8 +30,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 39,
-          "last-use": 1601356528061
+          "count": 49,
+          "last-use": 1604295588424
         },
         {
           "category": "smooch",
@@ -83,8 +83,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 20,
-          "last-use": 1602038113891
+          "count": 28,
+          "last-use": 1604295582980
         },
         {
           "category": "smooch",
@@ -183,8 +183,8 @@
         },
         {
           "category": "smooch",
-          "count": 1,
-          "last-use": 1601527397466
+          "count": 2,
+          "last-use": 1603950399539
         }
       ]
     },
@@ -220,7 +220,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1
+          "count": 3,
+          "last-use": 1604295609680
         },
         {
           "category": "smooch",
@@ -243,7 +244,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 2
+          "count": 3,
+          "last-use": 1603172585718
         }
       ]
     },
@@ -270,8 +272,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 54,
-          "last-use": 1601531228690
+          "count": 59,
+          "last-use": 1604295578745
         }
       ]
     },
@@ -280,13 +282,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1,
-          "last-use": 0
+          "count": 2,
+          "last-use": 1603345173912
         },
         {
           "category": "smooch",
-          "count": 3,
-          "last-use": 1601522672359
+          "count": 4,
+          "last-use": 1603950450013
         }
       ]
     },
@@ -370,8 +372,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 14,
-          "last-use": 1601446051765
+          "count": 15,
+          "last-use": 1603950393097
         }
       ]
     },
@@ -380,8 +382,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 4,
-          "last-use": 1601446060030
+          "count": 5,
+          "last-use": 1603950385240
         }
       ]
     },
@@ -512,6 +514,76 @@
           "category": "yeet",
           "count": 1,
           "last-use": 1601531244562
+        }
+      ]
+    },
+    {
+      "name": "@all",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1603950364921
+        }
+      ]
+    },
+    {
+      "name": "@yeetmaster197923",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604295555703
+        }
+      ]
+    },
+    {
+      "name": "@maddisontreichel",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604295607019
+        }
+      ]
+    },
+    {
+      "name": "@maddy_treichel",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604295635573
+        }
+      ]
+    },
+    {
+      "name": "@yeet_master",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604295658658
+        }
+      ]
+    },
+    {
+      "name": "@cllmv",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604295679791
+        }
+      ]
+    },
+    {
+      "name": "@reb00tz",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604295710890
         }
       ]
     }
