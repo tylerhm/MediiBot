@@ -30,8 +30,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 49,
-          "last-use": 1604295588424
+          "count": 56,
+          "last-use": 1605157297691
         },
         {
           "category": "smooch",
@@ -83,13 +83,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 28,
-          "last-use": 1604295582980
+          "count": 33,
+          "last-use": 1605154880363
         },
         {
           "category": "smooch",
-          "count": 8,
-          "last-use": 1600400942764
+          "count": 9,
+          "last-use": 1604634859706
         }
       ]
     },
@@ -220,8 +220,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 3,
-          "last-use": 1604295609680
+          "count": 4,
+          "last-use": 1604898056488
         },
         {
           "category": "smooch",
@@ -272,8 +272,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 59,
-          "last-use": 1604295578745
+          "count": 63,
+          "last-use": 1605154843132
         }
       ]
     },
@@ -372,8 +372,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 15,
-          "last-use": 1603950393097
+          "count": 18,
+          "last-use": 1606366528350
         }
       ]
     },
@@ -382,8 +382,13 @@
       "data": [
         {
           "category": "smooch",
-          "count": 5,
-          "last-use": 1603950385240
+          "count": 7,
+          "last-use": 1605510470022
+        },
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1605154856317
         }
       ]
     },
@@ -584,6 +589,46 @@
           "category": "yeet",
           "count": 1,
           "last-use": 1604295710890
+        }
+      ]
+    },
+    {
+      "name": "@sarxbear",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1604634874667
+        }
+      ]
+    },
+    {
+      "name": "@beasupportivegf",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1604898083346
+        }
+      ]
+    },
+    {
+      "name": "@spookytechnology",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 2,
+          "last-use": 1605157288835
+        }
+      ]
+    },
+    {
+      "name": "@1heart",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1606201809846
         }
       ]
     }
