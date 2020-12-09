@@ -7,6 +7,12 @@
     {
       "name": "smooch",
       "undo": "smack"
+    },
+    {
+      "name": "hug"
+    },
+    {
+      "name": "test"
     }
   ],
   "entries": [
@@ -37,6 +43,11 @@
           "category": "smooch",
           "count": 2,
           "last-use": 1599630132143
+        },
+        {
+          "category": "hug",
+          "count": 15,
+          "last-use": 1607490622050
         }
       ]
     },
@@ -60,6 +71,11 @@
           "category": "smooch",
           "count": 1,
           "last-use": 1601527401300
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607404281739
         }
       ]
     },
@@ -83,13 +99,18 @@
       "data": [
         {
           "category": "yeet",
-          "count": 33,
-          "last-use": 1605154880363
+          "count": 42,
+          "last-use": 1607485977328
         },
         {
           "category": "smooch",
           "count": 9,
           "last-use": 1604634859706
+        },
+        {
+          "category": "hug",
+          "count": 10,
+          "last-use": 1607407012996
         }
       ]
     },
@@ -108,6 +129,11 @@
         {
           "category": "yeet",
           "count": 1
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607397997539
         }
       ]
     },
@@ -144,6 +170,11 @@
         {
           "category": "yeet",
           "count": 1
+        },
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492175310
         }
       ]
     },
@@ -185,6 +216,11 @@
           "category": "smooch",
           "count": 2,
           "last-use": 1603950399539
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607401797749
         }
       ]
     },
@@ -203,6 +239,11 @@
         {
           "category": "yeet",
           "count": 1
+        },
+        {
+          "category": "hug",
+          "count": 3,
+          "last-use": 1607492181991
         }
       ]
     },
@@ -225,8 +266,18 @@
         },
         {
           "category": "smooch",
+          "count": 3,
+          "last-use": 1607484213626
+        },
+        {
+          "category": "test",
+          "count": 1,
+          "last-use": 1607408755675
+        },
+        {
+          "category": "hug",
           "count": 2,
-          "last-use": 1599804210162
+          "last-use": 1607484206495
         }
       ]
     },
@@ -236,6 +287,11 @@
         {
           "category": "yeet",
           "count": 3
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607399684179
         }
       ]
     },
@@ -246,6 +302,11 @@
           "category": "yeet",
           "count": 3,
           "last-use": 1603172585718
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607397941748
         }
       ]
     },
@@ -362,8 +423,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 0,
-          "last-use": 0
+          "count": 2,
+          "last-use": 1607493427122
         }
       ]
     },
@@ -372,8 +433,18 @@
       "data": [
         {
           "category": "smooch",
-          "count": 18,
-          "last-use": 1606366528350
+          "count": 22,
+          "last-use": 1607486449676
+        },
+        {
+          "category": "hug",
+          "count": 4,
+          "last-use": 1607492203651
+        },
+        {
+          "category": "yeet",
+          "count": 2,
+          "last-use": 1607484894307
         }
       ]
     },
@@ -389,6 +460,11 @@
           "category": "yeet",
           "count": 1,
           "last-use": 1605154856317
+        },
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607406895780
         }
       ]
     },
@@ -527,8 +603,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 1,
-          "last-use": 1603950364921
+          "count": 2,
+          "last-use": 1607484791148
         }
       ]
     },
@@ -609,6 +685,11 @@
           "category": "yeet",
           "count": 1,
           "last-use": 1604898083346
+        },
+        {
+          "category": "hug",
+          "count": 4,
+          "last-use": 1607487867529
         }
       ]
     },
@@ -629,6 +710,256 @@
           "category": "smooch",
           "count": 1,
           "last-use": 1606201809846
+        }
+      ]
+    },
+    {
+      "name": "@purlpurlpurl",
+      "data": [
+        {
+          "category": "hug",
+          "count": 26,
+          "last-use": 1607493333830
+        },
+        {
+          "category": "smooch",
+          "count": 23,
+          "last-use": 1607491115708
+        }
+      ]
+    },
+    {
+      "name": "@that",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607398007883
+        }
+      ]
+    },
+    {
+      "name": "@th1cc_chip",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607398044124
+        }
+      ]
+    },
+    {
+      "name": "@mmeporsche",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607399562899
+        }
+      ]
+    },
+    {
+      "name": "@ford1930",
+      "data": [
+        {
+          "category": "hug",
+          "count": 3,
+          "last-use": 1607399900793
+        }
+      ]
+    },
+    {
+      "name": "@anigma",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607401883209
+        }
+      ]
+    },
+    {
+      "name": "@kristineekes",
+      "data": [
+        {
+          "category": "hug",
+          "count": 3,
+          "last-use": 1607406956936
+        }
+      ]
+    },
+    {
+      "name": "@magictoast37",
+      "data": [
+        {
+          "category": "hug",
+          "count": 3,
+          "last-use": 1607406467281
+        }
+      ]
+    },
+    {
+      "name": "@lukas_55334",
+      "data": [
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607407337069
+        }
+      ]
+    },
+    {
+      "name": "@indytheob",
+      "data": [
+        {
+          "category": "hug",
+          "count": 5,
+          "last-use": 1607490852863
+        }
+      ]
+    },
+    {
+      "name": "@domesticviolets",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607408636459
+        }
+      ]
+    },
+    {
+      "name": "@tester",
+      "data": [
+        {
+          "category": "test",
+          "count": 2,
+          "last-use": 1607408751005
+        }
+      ]
+    },
+    {
+      "name": "@chunkeymunkeyttv",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607409048206
+        }
+      ]
+    },
+    {
+      "name": "@youarealovelyperson",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607483455019
+        }
+      ]
+    },
+    {
+      "name": "@mooshimoo_",
+      "data": [
+        {
+          "category": "hug",
+          "count": 12,
+          "last-use": 1607493383535
+        },
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1607490282090
+        }
+      ]
+    },
+    {
+      "name": "@cat",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1607484187836
+        }
+      ]
+    },
+    {
+      "name": "@kaileygiggles",
+      "data": [
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607484723506
+        }
+      ]
+    },
+    {
+      "name": "@theworld",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492208899
+        }
+      ]
+    },
+    {
+      "name": "@the",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492215887
+        }
+      ]
+    },
+    {
+      "name": "@everythingever",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492224384
+        }
+      ]
+    },
+    {
+      "name": "@everyonewhoneedsit",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492242495
+        }
+      ]
+    },
+    {
+      "name": "@everyonewatchingmediiincludingmediibecauseweareallawsome",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492263045
+        }
+      ]
+    },
+    {
+      "name": "@mediitheuniversetheworldchat",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492283961
+        }
+      ]
+    },
+    {
+      "name": "@mediitheuniversetheworldchateverythingnothingeveryonethemultiversemoochicactusrunnermeofcourseandcoronainfinitly",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1607492331965
         }
       ]
     }
