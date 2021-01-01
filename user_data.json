@@ -36,8 +36,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 56,
-          "last-use": 1605157297691
+          "count": 58,
+          "last-use": 1609042996354
         },
         {
           "category": "smooch",
@@ -46,8 +46,8 @@
         },
         {
           "category": "hug",
-          "count": 15,
-          "last-use": 1607490622050
+          "count": 20,
+          "last-use": 1609049824743
         }
       ]
     },
@@ -74,8 +74,8 @@
         },
         {
           "category": "hug",
-          "count": 2,
-          "last-use": 1607404281739
+          "count": 3,
+          "last-use": 1609221618728
         }
       ]
     },
@@ -84,8 +84,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 213,
-          "last-use": 1599969836879
+          "count": 214,
+          "last-use": 1608966567686
         },
         {
           "category": "smooch",
@@ -99,8 +99,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 42,
-          "last-use": 1607485977328
+          "count": 62,
+          "last-use": 0
         },
         {
           "category": "smooch",
@@ -109,8 +109,8 @@
         },
         {
           "category": "hug",
-          "count": 10,
-          "last-use": 1607407012996
+          "count": 15,
+          "last-use": 1609306350964
         }
       ]
     },
@@ -120,6 +120,11 @@
         {
           "category": "yeet",
           "count": 7
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1607662052445
         }
       ]
     },
@@ -132,8 +137,8 @@
         },
         {
           "category": "hug",
-          "count": 2,
-          "last-use": 1607397997539
+          "count": 3,
+          "last-use": 1609043111003
         }
       ]
     },
@@ -214,13 +219,13 @@
         },
         {
           "category": "smooch",
-          "count": 2,
-          "last-use": 1603950399539
+          "count": 3,
+          "last-use": 1608273689557
         },
         {
           "category": "hug",
-          "count": 2,
-          "last-use": 1607401797749
+          "count": 4,
+          "last-use": 1609306326947
         }
       ]
     },
@@ -242,8 +247,8 @@
         },
         {
           "category": "hug",
-          "count": 3,
-          "last-use": 1607492181991
+          "count": 5,
+          "last-use": 1608274636672
         }
       ]
     },
@@ -261,8 +266,8 @@
       "data": [
         {
           "category": "yeet",
-          "count": 4,
-          "last-use": 1604898056488
+          "count": 5,
+          "last-use": 1609043003875
         },
         {
           "category": "smooch",
@@ -276,8 +281,8 @@
         },
         {
           "category": "hug",
-          "count": 2,
-          "last-use": 1607484206495
+          "count": 3,
+          "last-use": 1609043017152
         }
       ]
     },
@@ -305,8 +310,8 @@
         },
         {
           "category": "hug",
-          "count": 2,
-          "last-use": 1607397941748
+          "count": 3,
+          "last-use": 1608185696281
         }
       ]
     },
@@ -316,6 +321,11 @@
         {
           "category": "yeet",
           "count": 1
+        },
+        {
+          "category": "hug",
+          "count": 3,
+          "last-use": 1608273404921
         }
       ]
     },
@@ -333,8 +343,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 64,
-          "last-use": 1607494576749
+          "count": 69,
+          "last-use": 1609043758467
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1609043122767
         }
       ]
     },
@@ -358,8 +373,13 @@
       "data": [
         {
           "category": "yeet",
-          "count": 1,
-          "last-use": 1599187672853
+          "count": 10,
+          "last-use": 1608088581792
+        },
+        {
+          "category": "hug",
+          "count": 2,
+          "last-use": 1609043159473
         }
       ]
     },
@@ -433,8 +453,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 22,
-          "last-use": 1607486449676
+          "count": 31,
+          "last-use": 1609481757957
         },
         {
           "category": "hug",
@@ -443,8 +463,8 @@
         },
         {
           "category": "yeet",
-          "count": 2,
-          "last-use": 1607484894307
+          "count": 3,
+          "last-use": 1607925560463
         }
       ]
     },
@@ -453,8 +473,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 7,
-          "last-use": 1605510470022
+          "count": 9,
+          "last-use": 1608189685628
         },
         {
           "category": "yeet",
@@ -485,6 +505,11 @@
           "category": "smooch",
           "count": 3,
           "last-use": 1600229066172
+        },
+        {
+          "category": "hug",
+          "count": 3,
+          "last-use": 1608181253054
         }
       ]
     },
@@ -493,8 +518,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 1,
-          "last-use": 1600060639787
+          "count": 2,
+          "last-use": 1609482566343
         }
       ]
     },
@@ -553,8 +578,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 2,
-          "last-use": 1601522629427
+          "count": 3,
+          "last-use": 1609482531602
         }
       ]
     },
@@ -603,8 +628,8 @@
       "data": [
         {
           "category": "smooch",
-          "count": 2,
-          "last-use": 1607484791148
+          "count": 3,
+          "last-use": 1608273711520
         }
       ]
     },
@@ -688,8 +713,8 @@
         },
         {
           "category": "hug",
-          "count": 4,
-          "last-use": 1607487867529
+          "count": 7,
+          "last-use": 1609043068474
         }
       ]
     },
@@ -718,13 +743,18 @@
       "data": [
         {
           "category": "hug",
-          "count": 26,
-          "last-use": 1607493333830
+          "count": 39,
+          "last-use": 1608444084801
         },
         {
           "category": "smooch",
-          "count": 23,
-          "last-use": 1607491115708
+          "count": 25,
+          "last-use": 1608273702852
+        },
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1608088485755
         }
       ]
     },
@@ -773,8 +803,8 @@
       "data": [
         {
           "category": "hug",
-          "count": 1,
-          "last-use": 1607401883209
+          "count": 2,
+          "last-use": 1609043043449
         }
       ]
     },
@@ -813,8 +843,8 @@
       "data": [
         {
           "category": "hug",
-          "count": 5,
-          "last-use": 1607490852863
+          "count": 6,
+          "last-use": 1607925263252
         }
       ]
     },
@@ -863,8 +893,8 @@
       "data": [
         {
           "category": "hug",
-          "count": 16,
-          "last-use": 1607494464361
+          "count": 19,
+          "last-use": 1608444079645
         },
         {
           "category": "smooch",
@@ -960,6 +990,66 @@
           "category": "hug",
           "count": 1,
           "last-use": 1607492331965
+        }
+      ]
+    },
+    {
+      "name": "@monke",
+      "data": [
+        {
+          "category": "yeet",
+          "count": 1,
+          "last-use": 1607925539364
+        }
+      ]
+    },
+    {
+      "name": "@to=0",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1608181214997
+        }
+      ]
+    },
+    {
+      "name": "@caht",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1608189682600
+        }
+      ]
+    },
+    {
+      "name": "@ankles0811",
+      "data": [
+        {
+          "category": "hug",
+          "count": 1,
+          "last-use": 1608965327409
+        }
+      ]
+    },
+    {
+      "name": "@xenomorph",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 3,
+          "last-use": 1609043868885
+        }
+      ]
+    },
+    {
+      "name": "@gautam",
+      "data": [
+        {
+          "category": "smooch",
+          "count": 1,
+          "last-use": 1609482118196
         }
       ]
     }
